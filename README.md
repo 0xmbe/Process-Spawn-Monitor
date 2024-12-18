@@ -3,8 +3,9 @@ Program that monitors creation of new processes with option to suspend or kill u
 
 ## Usage
 Main functionality is checking new processes and making decisions based on your rules. Main Rules are:
-* Terminate
-* Suspend
+* Terminate -> Terminates every new process. Use only in test environment if you expect malware.
+* Suspend -> When app is suspended you are asked wheather to kill it or allow it.
+* Ask -> You are asked for every new process. At first you will have many prompts that will be saved to ini file.
 * Do nothing (Ignore)
 
 Additional functionality:
